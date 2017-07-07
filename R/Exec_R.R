@@ -17,7 +17,7 @@
 # c=6:15;
 # data=data.frame(a,b,c)
 
-data  <- read.csv("Data/data.csv")
+data  <- read.csv("data.csv")
 
 Exec_R=function(data) {
   lin_reg=lm(a~., data=data)
