@@ -18,11 +18,12 @@
 # data=data.frame(a,b,c)
 
 data  <- read.csv("data.csv")
+# Exec_R=function(data) {
+#   lin_reg=lm(a~., data=data)
+#   return(plot(lin_reg))
+# 
+# }
 
-Exec_R=function(data) {
-  lin_reg=lm(a~., data=data)
-  return(plot(lin_reg))
-
-}
-
+lin_reg=lm(a~., data=data)
+plot(lin_reg)
 
